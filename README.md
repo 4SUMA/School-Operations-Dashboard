@@ -1,2 +1,4 @@
 # School-Operations-Dashboard
-School Operations Dashboard
+Suma R
+Nagarjuna Degree College 
+
