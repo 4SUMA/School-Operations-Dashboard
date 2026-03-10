@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>School Operations Dashboard</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+background:#eef2f7;
+margin:0;
+}
+
+.header{
+background:linear-gradient(to right,#2b6cb0,#3b82f6);
+color:white;
+text-align:center;
+padding:20px;
+font-size:28px;
+font-weight:bold;
+}
+
+.container{
+width:90%;
+margin:auto;
+margin-top:20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card h3{
+margin:0;
+color:#333;
+}
+
+.metric{
+display:flex;
+justify-content:space-between;
+margin-top:15px;
+font-size:20px;
+font-weight:bold;
+}
+
+.small{
+color:gray;
+font-size:14px;
+}
+
+.section{
+margin-top:25px;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.alert{
+background:#fff8e1;
+padding:10px;
+margin-top:10px;
+border-radius:6px;
+}
+
+.events li{
+margin:8px 0;
+}
+
+.trend{
+margin-top:25px;
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.performers{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+margin-top:20px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+td{
+padding:8px;
+border-bottom:1px solid #eee;
+}
+
+.title{
+font-weight:bold;
+margin-bottom:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+School Operations Dashboard
+</div>
+
+<div class="container">
+
+<div class="grid">
+
+<div class="card">
+<h3>Attendance</h3>
+<div class="metric">
+<div>1200<br><span class="small">Total Students</span></div>
+<div style="color:green;">90%<br><span class="small">Present Today</span></div>
+</div>
+</div>
+
+<div class="card">
+<h3>Fee Collection</h3>
+<div class="metric">
+<div>₹38,00,000<br><span class="small">Collected</span></div>
+<div style="color:red;">₹12,00,000<br><span class="small">Pending</span></div>
+</div>
+</div>
+
+<div class="card">
+<h3>Staff Presence</h3>
+<div class="metric">
+<div>72<br><span class="small">Present</span></div>
+<div style="color:red;">8<br><span class="small">Absent</span></div>
+</div>
+</div>
+
+<div class="card">
+<h3>Total Staff</h3>
+<div class="metric">
+<div>80<br><span class="small">Teachers</span></div>
+</div>
+</div>
+
+</div>
+
+<div class="section">
+
+<div class="card">
+<div class="title">Exam Results</div>
+<p>Math : 76</p>
+<p>Science : 68</p>
+<p>English : 82</p>
+</div>
+
+<div class="card">
+<div class="title">Alerts & Actions</div>
+
+<div class="alert">⚠ Rahul: Low Attendance (65%)</div>
+<div class="alert">⚠ 10 Fee Defaulters</div>
+<div class="alert">⚠ Class 8B Low Scores</div>
+
+</div>
+
+<div class="card">
+<div class="title">Today's Events</div>
+<ul class="events">
+<li>9:00 AM – Assembly</li>
+<li>11:00 AM – Science Exhibition</li>
+<li>2:00 PM – Sports Practice</li>
+</ul>
+</div>
+
+</div>
+
+<div class="trend">
+<div class="title">Monthly Trends</div>
+<p>Attendance and Fee Collection Trend (Chart placeholder)</p>
+</div>
+
+<div class="performers">
+
+<div class="card">
+<div class="title">Top Performers</div>
+
+<table>
+<tr><td>Sneha</td><td>96</td></tr>
+<tr><td>Rahul</td><td>94</td></tr>
+<tr><td>Arjun</td><td>92</td></tr>
+</table>
+
+</div>
+
+<div class="card">
+<div class="title">Low Performers</div>
+
+<table>
+<tr><td>Ravi</td><td>38</td></tr>
+<tr><td>Kiran</td><td>35</td></tr>
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
